@@ -1,0 +1,77 @@
+{
+  "provider": "MockBank v1",
+  "note": "Demo-only dataset. In production you’d integrate Plaid/Setu instead of local JSON.",
+  "account": {
+    "account_id": "acc_demo_001",
+    "bank_name": "Mock National Bank",
+    "masked_account": "XXXX-1234",
+    "currency": "INR"
+  },
+  "transactions": [
+    {
+      "txn_id": "txn_1001",
+      "posted_date": "2026-03-10",
+      "description": "Zomato order",
+      "merchant": "Zomato",
+      "amount": 420.0,
+      "category": "food_and_dining"
+    },
+    {
+      "txn_id": "txn_1002",
+      "posted_date": "2026-03-11",
+      "description": "Metro card top-up",
+      "merchant": "City Metro",
+      "amount": 250.0,
+      "category": "transport"
+    },
+    {
+      "txn_id": "txn_1003",
+      "posted_date": "2026-03-12",
+      "description": "Amazon shopping",
+      "merchant": "Amazon",
+      "amount": 1299.0,
+      "category": "shopping_ecom"
+    },
+    {
+      "txn_id": "txn_1004",
+      "posted_date": "2026-03-14",
+      "description": "Electricity bill",
+      "merchant": "Power Utility",
+      "amount": 980.0,
+      "category": "utilities_bill"
+    },
+    {
+      "txn_id": "txn_1005",
+      "posted_date": "2026-03-18",
+      "description": "Coffee",
+      "merchant": "Cafe",
+      "amount": 160.0,
+      "category": "food_and_dining"
+    },
+    {
+      "txn_id": "txn_1006",
+      "posted_date": "2026-03-20",
+      "description": "Ride share",
+      "merchant": "Uber",
+      "amount": 310.0,
+      "category": "cab_transport"
+    },
+    {
+      "txn_id": "txn_1007",
+      "posted_date": "2026-03-24",
+      "description": "Groceries",
+      "merchant": "Supermart",
+      "amount": 860.0,
+      "category": "food_and_dining"
+    },
+    {
+      "txn_id": "txn_1008",
+      "posted_date": "2026-03-29",
+      "description": "Internet bill",
+      "merchant": "ISP",
+      "amount": 799.0,
+      "category": "internet_bill"
+    }
+  ]
+}
+

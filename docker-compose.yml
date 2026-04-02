@@ -1,0 +1,19 @@
+# FinSight AI — optional local stack (API + persisted data volume)
+# Usage: docker compose up --build
+#
+# Frontend: run separately with `cd frontend && npm run dev` (proxies /api → localhost:8000),
+# or build static assets and serve with any static host.
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      PORT: "8000"
+      ALLOWED_ORIGINS: "http://localhost:5173,http://127.0.0.1:5173"
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+    volumes:
+      - ./data:/app/data
